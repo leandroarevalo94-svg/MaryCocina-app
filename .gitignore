@@ -1,0 +1,21 @@
+# Python
+backend/.venv/
+backend/__pycache__/
+*.pyc
+
+# Database
+backend/marycocina.db
+
+# Environment variables
+.env
+
+# VSCode
+.vscode/
+
+# Linux
+.DS_Store
+
+# Python cache
+.pytest_cache/
+
+backend/test

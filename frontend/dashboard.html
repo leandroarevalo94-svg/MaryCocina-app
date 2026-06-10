@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MaryCocina.app - Dashboard</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<section class="view active" id="view-dashboard">
+
+    <div class="notebook">
+
+        <div class="spiral-binding" aria-hidden="true"></div>
+
+        <header>
+            <div class="logo">
+                <span class="logo-mary">MaryCocina</span>
+                <span class="logo-app">.app</span>
+            </div>
+
+            <button class="btn-logout"
+                    onclick="window.location.href='login.html'">
+                Salir
+            </button>
+        </header>
+
+        <div class="actions-row">
+           <button class="new-recipe-btn btn-add"
+                  onclick="window.location.href='recipe.html?mode=new'">
+             <i class="fas fa-plus-circle"></i>
+             Nueva receta
+           </button>
+        </div>
+
+        <div class="search-container search-bar">
+
+            <i class="fas fa-search"></i>
+
+            <input class="search-input"
+                   placeholder="Buscar receta..."
+                   type="text">
+
+            <select class="category-select"
+                    aria-label="Filtrar por categoría">
+
+                <option value="">
+                    Todas las categorías
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="recipe-list">
+
+            <!-- Se llena dinámicamente desde JS -->
+            <div class="empty-placeholder">
+                Cargando recetas...
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
