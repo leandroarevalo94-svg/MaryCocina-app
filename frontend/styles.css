@@ -579,6 +579,10 @@ header {
       margin-top: 20px;
     }
 
+    .recipe-category {
+        text-align: center;
+    }
+
     /* Detalle receta */
     .detail-container {
         width: calc(100% - 20px);
@@ -738,6 +742,7 @@ header {
     display: list-item !important;
     list-style: disc !important;
     margin-bottom: 8px;
+    overflow-wrap: anywhere;
 }
 
 .step-item{
@@ -833,4 +838,5 @@ header {
     font-size:1rem;
     font-weight:700;
     font-family: 'Nunito', sans-serif;
+    
 }
