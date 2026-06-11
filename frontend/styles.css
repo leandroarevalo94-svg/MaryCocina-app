@@ -4,7 +4,7 @@
     --secondary: #81a684;
     --bg-cream: #fcf7f1;
     --bg-card: #FEFBF3;
-    --text-dark: #6f645d;
+    --text-dark: #000000;
     --text-muted: #8e8179;
     --border: #E0D5C1;
     --danger: #E74C3C;
@@ -270,7 +270,7 @@ header {
     border: 1px solid var(--border);
     border-radius: 10px;
     font-size: 0.95rem;
-    color: var(--notebook-text);
+    color: var(--text-muted);
     
 }
 
@@ -656,7 +656,7 @@ header {
 
 .detail-description{
     line-height:1.8;
-    color:var(--text-muted);
+    color:var(--text-dark);
 }
 
 .detail-img-wrap{
@@ -822,13 +822,15 @@ header {
 
 .recipe-info h3{
     margin:0;
-    font-size:1.8rem;
+    font-size:1.4rem;
     color:#000;
+    font-family: 'Nunito', sans-serif;
 }
 
 .recipe-category{
     margin-top:10px;
     color:var(--primary);
-    font-size:1.1rem;
-    font-weight:500;
+    font-size:1rem;
+    font-weight:700;
+    font-family: 'Nunito', sans-serif;
 }
