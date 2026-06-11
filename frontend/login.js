@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://marycocina-app.onrender.com";
 
 document.addEventListener('DOMContentLoaded', ()=>{
     const toggle = document.querySelector('#view-login .toggle-pwd');

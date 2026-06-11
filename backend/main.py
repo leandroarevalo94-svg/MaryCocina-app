@@ -36,6 +36,9 @@ from storage import save_uploaded_image
 # APP INIT
 # =========================
 app = FastAPI()
+@app.get("/")
+def root():
+    return {"status": "ok", "message": "MaryCocina API running"}
 # =========================
 # CORS (permite frontend)
 # =========================
@@ -50,7 +53,7 @@ app.add_middleware(
 # =========================
 # CREAR TABLAS
 # =========================
-Base.metadata.create_all(bind=engine)
+
 
 
 # =========================
